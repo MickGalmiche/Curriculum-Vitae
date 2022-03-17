@@ -1,0 +1,41 @@
+.experiences {
+    row-gap: 20px;
+
+    @include for-tablet {
+        @include setSubGrid;
+    }
+
+    &__title {
+        @include setTitle;
+        @include setBoldTitle;
+    }
+}
+
+.experienceCaption {
+
+    &__title {
+        font-size: 1.2rem;
+        @include setTitle;
+    }
+
+    &__content {
+        margin: map-get($margin, none);
+        font-weight: 500;
+    }
+}
+
+.experienceItem {
+
+    &__title {
+        @include setTitle;
+        @include setBoldTitle;
+    }
+
+    &__link {
+        letter-spacing: .2rem;
+    }
+
+    &__content {
+        margin: map-get($margin, none);
+    }
+}

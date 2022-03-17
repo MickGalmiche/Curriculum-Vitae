@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(".././fonts/Raleway/Raleway-Regular.eot");
+  src: local("Raleway Regular"), local("Raleway-Regular"), url(".././fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url(".././fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url(".././fonts/Raleway/Raleway-Regular.woff") format("woff"), url(".././fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(".././fonts/Raleway/Raleway-Bold.eot");
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(".././fonts/Raleway/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url(".././fonts/Raleway/Raleway-Bold.woff") format("woff"), url(".././fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(".././fonts/Raleway/Raleway-Medium.eot");
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(".././fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url(".././fonts/Raleway/Raleway-Medium.woff") format("woff"), url(".././fonts/Raleway/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #767171;
+  background-color: white;
+  max-width: 992px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #cd853f;
+}
+
+h3 {
+  color: #C45911;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+.header__title {
+  color: #C45911;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+.header__subtitle {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "langages hardskills" "education education" "experiences experiences" "contact contact";
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .main__languages {
+    grid-area: langages;
+    justify-self: end;
+    text-align: right;
+  }
+  .main__hardSkills {
+    grid-area: hardskills;
+  }
+  .main__education {
+    grid-area: education;
+  }
+  .main__experience {
+    grid-area: experiences;
+  }
+  .main__contact {
+    grid-area: contact;
+  }
+}
+
+.languages__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.languagesList__item {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+.languagesList__item--sub {
+  font-size: 0.6rem;
+}
+
+.hardSkills__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.education {
+  row-gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .education {
+    display: contents;
+    /* display: grid;
+    grid-template-columns: subgrid; */
+  }
+  .education__title {
+    grid-column-start: 2;
+  }
+  .education__caption {
+    justify-self: end;
+    text-align: right;
+  }
+}
+.education__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.educationCaption__title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+.educationCaption__info {
+  margin: 0;
+  font-weight: 500;
+}
+
+.educationItem__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.educationItem__content {
+  margin: 0;
+}
+
+.experiences {
+  row-gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .experiences {
+    display: contents;
+    /* display: grid;
+    grid-template-columns: subgrid; */
+  }
+  .experiences__title {
+    grid-column-start: 2;
+  }
+  .experiences__caption {
+    justify-self: end;
+    text-align: right;
+  }
+}
+.experiences__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.experienceCaption__title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+.experienceCaption__content {
+  margin: 0;
+  font-weight: 500;
+}
+
+.experienceItem__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.experienceItem__link {
+  letter-spacing: 0.2rem;
+}
+.experienceItem__content {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: contents;
+    /* display: grid;
+    grid-template-columns: subgrid; */
+  }
+  .contact__title {
+    grid-column-start: 2;
+  }
+  .contact__caption {
+    justify-self: end;
+    text-align: right;
+  }
+}
+.contact__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.contactCaptionList__item {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

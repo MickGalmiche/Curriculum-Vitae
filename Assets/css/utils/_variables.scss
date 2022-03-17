@@ -1,0 +1,24 @@
+$font-primary: "Raleway", sans-serif;
+
+$color-primary: #C45911;
+$color-secondary: #767171;
+$color-tertiary: #cd853f;
+
+$bgcolor-primary: lighten($color-primary, 60%);
+
+$padding: (none:0, xsmall: 2px, small:6px, medium:12px, large:20px);
+$margin: (none:0, xsmall: 2px, small:6px, medium:12px, large:20px, xlarge:40px);
+
+$breakpoints: (
+    large-mobile: 600px,
+    tablet: 768px,
+    desktop: 992px,
+    large-desktop: 1200px
+);
+
+$font-weight: (
+    black: 900,
+    medium: 500,
+    light: 300,
+    thin: 100
+);

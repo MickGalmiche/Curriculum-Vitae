@@ -1,0 +1,18 @@
+.languages {
+    
+    &__title {
+        @include setTitle;
+        @include setBoldTitle;
+    }
+}
+
+.languagesList {
+    &__item {
+        font-weight: bold;
+        @include setTitle;
+
+        &--sub {
+            font-size: .6rem;
+        }
+    }
+}

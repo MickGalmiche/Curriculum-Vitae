@@ -1,0 +1,19 @@
+.header {
+
+    margin-bottom: map-get($margin, xlarge);
+
+    &__title {
+        color: $color-primary;
+        font-weight: 500;
+        margin-bottom: map-get($margin, none);
+        @include setTitle
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: map-get($margin, none);
+        @include setTitle
+    }
+
+}

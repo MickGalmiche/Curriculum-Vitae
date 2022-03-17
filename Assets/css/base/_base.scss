@@ -1,0 +1,25 @@
+body {
+    font-family: $font-primary;
+    font-weight: 500;
+    font-style: normal;
+    font-size: .9rem;
+    color: $color-secondary;
+    background-color: $bgcolor-primary;
+    max-width: map-get($breakpoints, desktop);
+    margin: map-get($margin, xlarge) auto;
+    padding: map-get($padding, large);
+}
+
+a {
+    text-decoration: none;
+    color: $color-tertiary;
+}
+
+h3 {
+    color: $color-primary;
+}
+
+ul {
+    list-style: none;
+    padding: map-get($padding, none);
+}

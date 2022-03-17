@@ -1,0 +1,7 @@
+.hardSkills {
+    
+    &__title {
+        @include setTitle;
+        @include setBoldTitle;
+    }
+}

@@ -1,0 +1,36 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+
+    @include for-tablet {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "langages hardskills"
+        "education education"
+        "experiences experiences"
+        "contact contact";
+        column-gap: 40px;
+
+        &__languages {
+            grid-area: langages;
+            @include setLeftColumn;
+        }
+
+        &__hardSkills {
+            grid-area: hardskills;
+        }
+
+        &__education {
+            grid-area: education;
+        }
+
+        &__experience {
+            grid-area: experiences;
+        }
+
+        &__contact {
+            grid-area: contact;
+        }
+    }
+}

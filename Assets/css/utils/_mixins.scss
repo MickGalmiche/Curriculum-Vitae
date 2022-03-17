@@ -1,0 +1,53 @@
+@mixin for-large-mobile {
+    @media screen and (min-width: map-get($breakpoints, large-mobile)) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin for-large-desktop {
+    @media screen and (min-width: map-get($breakpoints, large-desktop)) {
+        @content;
+    }
+}
+
+@mixin setTitle {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin: map-get($margin, none);
+}
+
+@mixin setBoldTitle {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@mixin setLeftColumn {
+    justify-self: end;
+    text-align: right;
+}
+
+@mixin setSubGrid {
+    display: contents;
+    /* display: grid;
+    grid-template-columns: subgrid; */
+
+    &__title {
+        grid-column-start: 2;
+    }
+
+    &__caption {
+        @include setLeftColumn;
+    }
+}

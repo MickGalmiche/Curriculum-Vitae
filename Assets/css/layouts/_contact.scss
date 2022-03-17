@@ -1,0 +1,17 @@
+.contact {
+    @include for-tablet {
+        @include setSubGrid;
+    }
+
+    &__title {
+        @include setTitle;
+        @include setBoldTitle;
+    }
+}
+
+.contactCaptionList {
+    &__item {
+        font-weight: bold;
+        @include setTitle;
+    }
+}

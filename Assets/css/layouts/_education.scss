@@ -1,0 +1,37 @@
+.education {
+    row-gap: 20px;
+    
+    @include for-tablet {
+        @include setSubGrid;
+    }
+
+    &__title {
+        @include setTitle;
+        @include setBoldTitle;
+    }
+}
+
+.educationCaption {
+
+    &__title {
+        font-size: 1.2rem;
+        @include setTitle;
+    }
+
+    &__info {
+        margin: map-get($margin, none);
+        font-weight: 500;
+    }
+}
+
+.educationItem {
+
+    &__title {
+        @include setTitle;
+        @include setBoldTitle;
+    }
+
+    &__content {
+        margin: map-get($margin, none);
+    }
+}
